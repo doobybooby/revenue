@@ -14,7 +14,7 @@ const VunueNfo = () => {
                         <div className="vn_item">
                             <div className="vn_outer">
                                 <div className="vn_inner">
-                                    <div className="vn_icon_square bck_red"></div>
+                                    <div className="vn_icon_square bck_pink"></div>
                                     <div 
                                         className="vn_icon"
                                         style={{
@@ -22,10 +22,10 @@ const VunueNfo = () => {
                                         }}
                                     ></div>
                                     <div className="vn_title">
-                                        Event Date & Time
+                                        Date & Time
                                     </div>
                                     <div className="vn_desc">
-                                        1 April 2017 @1.05 pm
+                                        Call and Register
                                     </div>
                                 </div>
                             </div>
@@ -45,10 +45,10 @@ const VunueNfo = () => {
                                         }}
                                     ></div>
                                     <div className="vn_title">
-                                        Event Location
+                                        Location
                                     </div>
                                     <div className="vn_desc">
-                                        1 E 161st Street The Bronx, NY
+                                        Union Tpke, Oakland Gardens, NY 11364
                                     </div>
                                 </div>
                             </div>

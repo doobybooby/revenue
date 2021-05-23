@@ -25,12 +25,12 @@ class App extends Component {
           <VunueNfo/>
         </Element>
         
-        <Element name="highlights">
-          <Highlight/>
-        </Element>
-        
         <Element name="pricing">
           <Pricing/>
+        </Element>
+
+        <Element name="highlights">
+          <Highlight/>
         </Element>
 
         <Element name="location">

@@ -10,7 +10,8 @@ const Location = () => (
             frameBorder="0"
             allowFullScreen
             title="myframe" 
-        />
+        >
+        </iframe>
 
 
         <div className="location_tag">
