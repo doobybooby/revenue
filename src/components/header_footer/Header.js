@@ -37,13 +37,13 @@ class Header extends Component {
             drawerOpen: value
         })
     }
-
+    // #87CEFA, 'rgb(255,229,204,.5)'
     render() {
         return (
             <AppBar
                 position="fixed"
                 style={{
-                    backgroundColor: this.state.headerShow ? '#2f2f2f' : 'transparent',
+                    backgroundColor: this.state.headerShow ? '#87CEFA' : 'transparent',
                     boxShadow: 'none',
                     padding: '10px 0px'
                 }}
@@ -51,8 +51,8 @@ class Header extends Component {
                 <Toolbar>
 
                     <div className="header_logo">
-                        <div className="font_righteous header_logo_venue">Yankee Stadium</div>
-                        <div className="header_logo_title">Opening Day</div>
+                        <div className="font_righteous header_logo_venue">HD Volleyball</div>
+                        <div className="header_logo_title">Beach, Grass, Indoor</div>
                     </div>
 
                     <IconButton
