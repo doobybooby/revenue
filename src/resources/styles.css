@@ -9,6 +9,9 @@ body {
     font-family: 'Righteous', cursive;
 
 }
+.bck_footer{
+    background: #87CEFA;
+}
 
 .bck_black {
     background: rgb(255,229,204);
@@ -164,8 +167,7 @@ footer .footer_copyright {
     width:50%;
     color:#000;
     text-align: center;
-}
-                      
+}        
 .vn_item .vn_outer {
     width: 300px;
     border: 2px solid #828282;
@@ -218,9 +220,48 @@ footer .footer_copyright {
     margin-bottom: 90px;
 }
 
+/*======
+coach
+=====*/
+.all_coach{
+    background: black;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+.coach_div{
+    background: hotpink;
+
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    height: 500px;
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.coach_box{
+    background: indigo;
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+.coach_name{
+    background: blue;
+}
+
+
 /*====================
         HIGHLIGHTS
 ======================*/
+
 
 
 .highlight_wrapper h2 {
@@ -335,7 +376,7 @@ footer .footer_copyright {
 }
 
 .pricing_inner_wrapper .pricing_buttons {
-     text-align: center;
+    text-align: center;
 }
 
 

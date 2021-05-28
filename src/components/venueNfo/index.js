@@ -25,7 +25,7 @@ const VunueNfo = () => {
                                         Date & Time
                                     </div>
                                     <div className="vn_desc">
-                                        Call and Register
+                                        Call and Set Up at Your Convinience
                                     </div>
                                 </div>
                             </div>

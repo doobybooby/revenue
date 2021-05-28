@@ -5,9 +5,9 @@ const Description = () => {
     return (
         <Fade>
             <div className="center_wrapper">
-                <h2>Highlights</h2>
+                <h2>Meet the coach</h2>
                 <div className="highlight_description">
-                    Receive a real volleyball lessons by the coaches who knows what they are talking about. Or if you're just trying to ball with your friends that's cool too, we'll cheer from the side line.
+                    Our coaches has over 6 years of volleyball experience playing indoor, grass, and beach. 
                 </div>
             </div>
         </Fade>
