@@ -1,67 +1,72 @@
-import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+import React from "react";
 
-import MyButton from '../utils/MyButton';
+function Discount() {
 
-class Discount extends Component {
-
-    state = {
-        discountStart:0,
-        discountEnd:30
+    function formatDate(date) {
+    return date.toLocaleDateString();
     }
 
-
-    porcentage = () => {
-        if(this.state.discountStart < this.state.discountEnd){
-            this.setState({
-                discountStart: this.state.discountStart + 1
-            })
-        }
-    }
-
-    componentDidUpdate(){
-        setTimeout(()=>{
-            this.porcentage()
-        },30)
-    }
-
-
-    render() {
+    function Comment(props) {
         return (
-            <div className="center_wrapper">
-                <div className="discount_wrapper">
-
-                    <Fade
-                        onReveal={()=> this.porcentage()}
-                    >
-                        <div className="discount_porcentage">
-                            <span>{this.state.discountStart}%</span>
-                            <span>OFF</span>
-                        </div>
-                    </Fade>
-                    
-                    <Slide right>
-                        <div className="discount_description">
-                            <h3>Purchase tickets before 1st APRIL</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        
-                            <MyButton
-                                text="Purchase tickets"
-                                bck="#ffa800"
-                                color="#ffffff"
-                                link="http://google.com"
-                            />
-                        
-                        </div>
-                    </Slide>
-                    
-
-
+            <div className="all_coach">
+                <div className="coach_div">
+                    <div className="coach_box">
+                        <img
+                        className="Avatar"
+                        src={props.author.avatarURL}
+                        alt={props.author.name}
+                        />
+                        <div className="coach_name">{props.author.name}</div>
+                    </div>
+                    <div className="coach_name">{props.text}</div>
+                    <div className="coach_name">{formatDate(props.date)}</div>
+                </div>
+                <div className="coach_div">
+                    <div className="coach_box">
+                        <img
+                        className="Avatar"
+                        src={props.author.avatarURL}
+                        alt={props.author.name}
+                        />
+                        <div className="coach_name">{props.author.name}</div>
+                    </div>
+                    <div className="coach_name">{props.text}</div>
+                    <div className="coach_name">{formatDate(props.date)}</div>
+                </div>
+                <div className="coach_div">
+                    <div className="coach_box">
+                        <img
+                        className="Avatar"
+                        src={props.author.avatarURL}
+                        alt={props.author.name}
+                        />
+                        <div className="coach_name">{props.author.name}</div>
+                    </div>
+                    <div className="coach_name">{props.text}</div>
+                    <div className="coach_name">{formatDate(props.date)}</div>
                 </div>
             </div>
-        );
-    }
+        
+    );
+}
+
+    const comment = {
+    date: new Date(),
+    text: "Head Coach",
+    author: {
+        name: "Hanbin Lee",
+        avatarURL: "https://placekitten.com/g/64/64",
+    },
+    };
+    return (
+        <div>
+            <Comment
+                date={comment.date}
+                text={comment.text}
+                author={comment.author}
+            />
+        </div>
+    );
 }
 
 export default Discount;

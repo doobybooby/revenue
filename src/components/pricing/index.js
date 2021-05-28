@@ -5,12 +5,12 @@ import Zoom from 'react-reveal/Zoom';
 class Pricing extends Component {
 
     state = {
-        prices:[102,131,220],
-        positions:['Grandstand','Main','Field'],
+        prices:[10,15,20],
+        positions:['Free Play','Private Lesson','Package'],
         desc:[
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uts',
-            'Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea',
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+            'Bring who every you want, set up open net $10/per person, 2 hours. ',
+            'Private Lessons, $15 per person, 2 hours',
+            'Receive a private lesson, then open play. You\' already there, why not?'
         ],
         linkto:['http://sales/b','http://sales/m','http://sales/s'],
         delay:[500,0,500]
@@ -33,7 +33,7 @@ class Pricing extends Component {
                             <MyButton
                                 text="Purchase"
                                 bck="#ffa800"
-                                color="#ffffff"
+                                color="#000"
                                 link={this.state.linkto[i]}
                             />
                         </div>
@@ -46,7 +46,7 @@ class Pricing extends Component {
 
     render() {
         return (
-            <div className="bck_black">
+            <div className="bck_pink">
                 <div className="center_wrapper pricing_section">
                     <h2>Pricing</h2>
 
