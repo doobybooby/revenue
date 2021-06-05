@@ -1,4 +1,5 @@
 import React from "react";
+import Doobin from '../../resources/images/pictures/Doobin_Lee.jpeg';
 
 function Discount() {
 
@@ -10,40 +11,40 @@ function Discount() {
         return (
             <div className="all_coach">
                 <div className="coach_div">
-                    <div className="coach_box">
-                        <img
-                        className="Avatar"
-                        src={props.author.avatarURL}
-                        alt={props.author.name}
-                        />
-                        <div className="coach_name">{props.author.name}</div>
+                    <img
+                    className="Avatar"
+                    src={Doobin}
+                    alt={props.author.name}
+                    />
+                    <div className="coach_name">{props.author.name}</div>
+                    <div>Assisstant Coach</div>
+                    <div className="coach_description">
+                        <p>I have played four years in highschool, a year in club, and two years of NCAA. I've also been playing beach/grass volleyball for 3 years.</p>
                     </div>
-                    <div className="coach_name">{props.text}</div>
-                    <div className="coach_name">{formatDate(props.date)}</div>
                 </div>
                 <div className="coach_div">
-                    <div className="coach_box">
-                        <img
-                        className="Avatar"
-                        src={props.author.avatarURL}
-                        alt={props.author.name}
-                        />
-                        <div className="coach_name">{props.author.name}</div>
+                    <img
+                    className="Avatar"
+                    src={Doobin}
+                    alt={props.author.name}
+                    />
+                    <div className="coach_name">{props.author.name}</div>
+                    <div>Head Coach</div>
+                    <div className="coach_description">
+                        <p>I have played four years in highschool, a year in club, and two years of NCAA. I've also been playing beach/grass volleyball for 3 years.</p>
                     </div>
-                    <div className="coach_name">{props.text}</div>
-                    <div className="coach_name">{formatDate(props.date)}</div>
                 </div>
                 <div className="coach_div">
-                    <div className="coach_box">
-                        <img
-                        className="Avatar"
-                        src={props.author.avatarURL}
-                        alt={props.author.name}
-                        />
-                        <div className="coach_name">{props.author.name}</div>
+                    <img
+                    className="Avatar"
+                    src={Doobin}
+                    alt={props.author.name}
+                    />
+                    <div className="coach_name">{props.author.name}</div>
+                    <div>Assisstant Coach</div>
+                    <div className="coach_description">
+                        <p>I have played four years in highschool, a year in club, and two years of NCAA. I've also been playing beach/grass volleyball for 3 years.</p>
                     </div>
-                    <div className="coach_name">{props.text}</div>
-                    <div className="coach_name">{formatDate(props.date)}</div>
                 </div>
             </div>
         
@@ -54,8 +55,7 @@ function Discount() {
     date: new Date(),
     text: "Head Coach",
     author: {
-        name: "Hanbin Lee",
-        avatarURL: "https://placekitten.com/g/64/64",
+        name: "Doobin Lee",
     },
     };
     return (

@@ -224,7 +224,7 @@ footer .footer_copyright {
 coach
 =====*/
 .all_coach{
-    background: black;
+    background: #87CEFA;
     margin: 20px;
     padding: 20px;
     display: flex;
@@ -235,11 +235,11 @@ coach
 }
 
 .coach_div{
-    background: hotpink;
-
+    background: linear-gradient(to left top, rgba(255,255,255,.7), rgba(255,255,255,.8));
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-
     flex-grow: 1;
     height: 500px;
     width: 33%;
@@ -247,15 +247,21 @@ coach
     box-sizing: border-box;
 
 }
+
 .coach_box{
-    background: indigo;
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 300px;
 }
 .coach_name{
-    background: blue;
+    font-size: 25px;
 }
+
+.Avatar{
+    height: 300px;
+}
+
 
 
 /*====================
